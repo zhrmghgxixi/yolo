@@ -1,0 +1,4 @@
+train: C:\Users\yushuyu\Desktop\yolo\train
+val: C:\Users\yushuyu\Desktop\yolo\val
+nc: 5
+names: ["black", "blue", "bottm", "red", "yellow"]
