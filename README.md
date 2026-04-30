@@ -1,15 +1,17 @@
 
 下载环境
 ```
-conda create --name yes python=3.8
+conda create --name py38yolo8 python=3.8
 
-conda activate yes
+conda activate py38yolo8
 ```
 
-1.启动虚拟环境
+1.启动、退出虚拟环境
 
 ```
-conda activate yes
+conda activate py38yolo8
+
+conda deactivate
 ```
 
 2.打开图像识别
