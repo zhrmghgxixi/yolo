@@ -107,6 +107,18 @@ C:/Users/Lenovo/Desktop/my_dataset/data.yaml
 ```
 yolo detect train model=yolo26s.pt data=C:/Users/Lenovo/Desktop/my_dataset/data.yaml epochs=100 imgsz=640 batch=4 device
 ```
+先下载 / 加载 YOLO26s：
+```
+python -c "from ultralytics import YOLO; model=YOLO('yolo26s.pt'); print('YOLO26s加载成功')"
+```
+然后训练：
+```
+yolo detect train model=yolo26s.pt data=Data_underscore_custom.yaml epochs=100 imgsz=640 batch=4 device=0
+```
+如果爆显存，就改成：
+```
+yolo detect train model=yolo26s.pt data=Data_underscore_custom.yaml epochs=100 imgsz=640 batch=2 device=0
+```
 
 
 ## yolov8
