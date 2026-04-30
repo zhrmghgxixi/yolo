@@ -119,6 +119,11 @@ yolo detect train model=yolo26s.pt data=Data_underscore_custom.yaml epochs=100 i
 ```
 yolo detect train model=yolo26s.pt data=Data_underscore_custom.yaml epochs=100 imgsz=640 batch=2 device=0
 ```
+现在执行这条
+```
+yolo detect predict model=runs/detect/train/weights/best.pt source=val/images device=0
+```
+
 
 
 ## yolov8
