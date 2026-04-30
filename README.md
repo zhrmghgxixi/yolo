@@ -85,18 +85,27 @@ yolo checks
 
 7. 测试 YOLO26 是否能加载,执行：
 ```
-python -c "from ultralytics import YOLO; model=YOLO('yolo26n.pt'); print('YOLO26加载成功')"
+python -c "from ultralytics import YOLO; model=YOLO('yolo26s.pt'); print('YOLO26s加载成功')"
 ```
 
-第一次运行时，如果本地没有 yolo26n.pt，它会自动下载。
+第一次运行时，如果本地没有 yolo26s.pt，它会自动下载。
 
 也可以测试推理：
 ```
-yolo predict model=yolo26n.pt source=https://ultralytics.com/images/bus.jpg
+yolo detect predict model=yolo26s.pt source=C:/Users/Lenovo/Desktop/test.jpg device=0
 ```
 如果网络图片下载失败，就用本地图片：
 ```
-yolo predict model=yolo26n.pt source=C:/Users/Lenovo/Desktop/test.jpg
+yolo detect predict model=yolo26s.pt source=https://ultralytics.com/images/bus.jpg device=0
+```
+
+假设你的数据集配置文件是：
+
+C:/Users/Lenovo/Desktop/my_dataset/data.yaml
+
+那么训练命令用这个：
+```
+yolo detect train model=yolo26s.pt data=C:/Users/Lenovo/Desktop/my_dataset/data.yaml epochs=100 imgsz=640 batch=4 device
 ```
 
 
