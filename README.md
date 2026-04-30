@@ -1,9 +1,9 @@
 
 下载环境
 ```
-conda activate yes
-
 conda create --name yes python=3.8
+
+conda activate yes
 ```
 
 1.启动虚拟环境
