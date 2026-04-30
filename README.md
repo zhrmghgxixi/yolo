@@ -70,7 +70,7 @@ python -m pip install -U ultralytics -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 如果你想继续用阿里源，也可以：
 ```
-python -m pip install -U ultralytics -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+python -m pip install -U ultralytics -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com --timeout 120 --retries 10
 ```
 
 安装后检查版本：
