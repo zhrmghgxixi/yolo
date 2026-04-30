@@ -4,6 +4,8 @@
 conda create --name py38yolo8 python=3.8
 
 conda activate py38yolo8
+
+conda install -c conda-forge labelimg -y
 ```
 
 1.启动、退出虚拟环境
