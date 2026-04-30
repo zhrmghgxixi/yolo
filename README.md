@@ -32,6 +32,11 @@ conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=
 conda install -c conda-forge opencv -y
 ```
 
+安装ultralytics
+```
+python -m pip install ultralytics -i http://mirrors.aliyun.com/pypi/simple/ --trusted-host mirrors.aliyun.com
+```
+
 运行
 ```
 python detect.py
