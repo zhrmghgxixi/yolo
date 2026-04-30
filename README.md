@@ -1,5 +1,5 @@
 
-下载环境
+# 下载环境
 ```
 conda create --name py38yolo8 python=3.8
 
@@ -70,7 +70,13 @@ yolo task=detect mode=predict model=yolov8s_custom.pt show=True conf=0.5 source=
 yolov8s_custom.pt
 ```
 
-打开串口
+# Conda指令：
+看当前在哪个环境
+```
+conda info --envs
+```
+
+# 打开串口
 ```
 pip install pyserial
 
@@ -83,7 +89,7 @@ python receive.py
 python detect.py
 ```
 
-创建文件夹
+# 创建文件夹
 ```
 mkdir
 ```
