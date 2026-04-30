@@ -29,7 +29,7 @@ conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=
 
 安装opancv
 ```
-pip install torch torchvision opencv-python
+conda install -c conda-forge opencv -y
 ```
 
 运行
